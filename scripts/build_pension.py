@@ -79,7 +79,7 @@ FAMING = {40: 233, 45: 216, 50: 195, 55: 170, 60: 139, 65: 101, 70: 56}
 
 # 社保官方最新公布社平年（缓存截止年）；该年之后的年份一律由"社平增幅"参数推算，
 # 即使 data/社平工资表.xlsx 里填了展示值也忽略，以保证与参数一致。
-OFFICIAL_LAST_YEAR = 2023
+OFFICIAL_LAST_YEAR = 2024
 
 # 城市别名映射：用户输入的常见写法 -> 缓存表标准城市名（因为缓存以省全口径为单位，
 # 成都执行四川、广州执行广东等）。未知城市保持原样（由 manual_sheping 或联网补充）。
@@ -240,7 +240,7 @@ def build():
     if retire_city not in data or not data[retire_city]:
         raise ValueError(
             "待遇领取地「%s」不在社平缓存且未提供 manual_sheping。"
-            "请联网查询该城市“全口径城镇单位就业人员月平均工资”并在 inputs.json 的 "
+            "请联网查询该城市“养老金计发基数（人社公布）”并在 inputs.json 的 "
             "manual_sheping 中按 {城市:{年份:月社平}} 补充，或用已有缓存城市。" % retire_city
         )
 
