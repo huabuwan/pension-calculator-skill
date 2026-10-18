@@ -1,0 +1,25 @@
+{
+  "_说明": "本文件为『养老金测算』Skill 的虚构示例，仅供演示 inputs.json 格式，不含任何真实个人数据。使用时请复制为 inputs.json 并替换为你的真实信息。",
+  "retire_city": "北京",
+  "retire_age": 60,
+  "retire_year": 2040,
+  "manual_sheping": {
+    "厦门": {"2023": 7600}
+  },
+  "params": {
+    "sheping_growth": 0.02,
+    "pension_growth": 0.02,
+    "interest_rate": 0.025,
+    "flex_ratio": 0.60,
+    "cap_index": false
+  },
+  "years": [
+    {"year": 2010, "city": "上海", "type": "单位职工", "months": 12, "base_monthly": 9000, "rate": 0.03, "is_estimated": false},
+    {"year": 2011, "city": "上海", "type": "单位职工", "months": 12, "base_monthly": 9500, "rate": 0.035, "is_estimated": false},
+    {"year": 2018, "city": "上海", "type": "单位职工", "months": 12, "base_monthly": 13000, "rate": 0.04, "is_estimated": false},
+    {"year": 2019, "city": "成都", "type": "单位职工", "months": 12, "base_monthly": 5000, "rate": 0.04, "is_estimated": false},
+    {"year": 2025, "city": "成都", "type": "单位职工", "months": 12, "account_entry": 5000, "is_estimated": false},
+    {"year": 2031, "city": "北京灵活", "type": "灵活就业", "months": 12, "is_estimated": true},
+    {"year": 2040, "city": "北京灵活", "type": "灵活就业", "months": 12, "is_estimated": true}
+  ]
+}
